@@ -6,31 +6,29 @@ public class BalancedParenthesis {
 
     public static void main(String args[]) {
 
-        System.out.println(balancedParenthesis("{(a,b)}"));
-        System.out.println(balancedParenthesis("{(a},b)"));
-        System.out.println(balancedParenthesis("{)(a,b}"));
+            System.out.println(balancedParenthesis("{(a,b)}"));
+            System.out.println(balancedParenthesis("{(a},b)"));
+            System.out.println(balancedParenthesis("{)(a,b}"));
     }
 
     public static boolean balancedParenthesis(String s) {
         Stack<Character> stack  = new Stack<>();
-        for(int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if(c == '[' || c == '(' || c == '{' ) {
-                stack.push(c);
-            } else if(c == ']') {
-                if(stack.isEmpty() || stack.pop() != '[') {
+        for(char ch : s.toCharArray()){
+            if(ch=='(' || ch=='{' || ch=='['){
+                stack.push(ch);
+            }else if(ch == ')'){
+                if(stack.isEmpty() || stack.pop()!='('){
                     return false;
                 }
-            } else if(c == ')') {
-                if(stack.isEmpty() || stack.pop() != '(') {
+            }else if(ch == ']'){
+                if (stack.isEmpty() || stack.pop()!='['){
                     return false;
                 }
-            } else if(c == '}') {
-                if(stack.isEmpty() || stack.pop() != '{') {
+            }else if(ch == '{'){
+                if(stack.isEmpty() || stack.pop()!='{'){
                     return false;
                 }
             }
-
         }
         return stack.isEmpty();
     }
