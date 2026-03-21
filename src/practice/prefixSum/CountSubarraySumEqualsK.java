@@ -1,4 +1,4 @@
-package practice.preixSum;
+package practice.prefixSum;
 
 import java.util.HashMap;
 import java.util.Map;
