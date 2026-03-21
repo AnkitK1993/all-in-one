@@ -3,7 +3,7 @@ package practice.basic;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] input = {5, 2, 4, 3, 3, 7};
+        int[] input = {12,23,45,234,345,678,67,89};
         int[] output = sortNumbers(input);
         for (int value : output) {
             System.out.println(value);
