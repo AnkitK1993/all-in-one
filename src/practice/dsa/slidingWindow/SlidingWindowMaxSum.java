@@ -19,20 +19,14 @@ public class SlidingWindowMaxSum {
             int maxSum = 0;
             int currentWindowSum = 0;
 
-            // Calculate sum of the first window
             for (int i = 0; i < k; i++) {
                 currentWindowSum += arr[i];
             }
             maxSum = currentWindowSum;
 
-            // Slide the window across the rest of the array
             for (int i = k; i < arr.length; i++) {
-                // Add the new element to the window
                 currentWindowSum += arr[i];
-                // Subtract the element leaving the window
                 currentWindowSum -= arr[i - k];
-
-                // Update maxSum if current window sum is greater
                 maxSum = Math.max(maxSum, currentWindowSum);
             }
 
