@@ -1,4 +1,4 @@
-package practice.slidingWindow;
+package practice.dsa.slidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;

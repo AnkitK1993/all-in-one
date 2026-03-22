@@ -1,4 +1,4 @@
-package practice.slidingWindow;
+package practice.dsa.slidingWindow;
 
 public class BuyOrSellStock {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package practice.twoPointer;
+package practice.dsa.twoPointer;
 
 public class ContainerWithMostWater {
     public static void main(String[] args) {
