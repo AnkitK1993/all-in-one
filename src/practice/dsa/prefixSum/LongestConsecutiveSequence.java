@@ -25,7 +25,7 @@ public class LongestConsecutiveSequence {
                     nextNum++;
                 }
                 longest = Math.max(longest, length);
-            }
+                    }
         }
         return longest;
     }
