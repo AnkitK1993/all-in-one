@@ -1,4 +1,4 @@
-package practice.basic;
+package practice.dsa.stringsAndArrays;
 
 import java.util.ArrayList;
 import java.util.List;

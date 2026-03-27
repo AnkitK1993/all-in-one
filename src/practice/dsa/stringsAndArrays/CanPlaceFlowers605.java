@@ -1,4 +1,4 @@
-package practice.basic;
+package practice.dsa.stringsAndArrays;
 
 public class CanPlaceFlowers605 {
     public static void main(String[] args) {
