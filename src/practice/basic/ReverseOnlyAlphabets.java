@@ -4,7 +4,6 @@ public class ReverseOnlyAlphabets {
     public static void main(String[] args) {
         String str = "A*BC@D#E";
         System.out.println("Original String          : " + str);
-        //reverse only alphabets in a string and display the result
         char[] arr = str.toCharArray();
         int left = 0, right = arr.length - 1;
         while (left < right) {
