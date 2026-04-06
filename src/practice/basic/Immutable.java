@@ -10,16 +10,11 @@ public final class Immutable {
     private final List<String> certs;
     private final Map<String, String> metadata;
 
-
-    public Immutable(int id, String name, List<String> certs,  Map<String, String> metadata) {
+    public Immutable(int id, String name, List<String> certs, Map<String, String> metadata) {
         this.id = id;
         this.name = name;
-        this.certs = new ArrayList<>(certs);
-        Map<String, String> tempMap = new HashMap<>();
-        for (Map.Entry<String, String> entry : metadata.entrySet()) {
-            tempMap.put(entry.getKey(), entry.getValue());
-        }
-        this.metadata = tempMap;
+        this.certs = certs;
+        this.metadata = metadata;
     }
 
     public int getId() {
@@ -35,11 +30,7 @@ public final class Immutable {
     }
 
     public Map<String, String> getMetadata() {
-        Map<String, String> tempMap = new HashMap<>();
-        for (Map.Entry<String, String> entry : this.metadata.entrySet()) {
-            tempMap.put(entry.getKey(), entry.getValue());
-        }
-        return tempMap;
+        return metadata;
     }
 }
 
