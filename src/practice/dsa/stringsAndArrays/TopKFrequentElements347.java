@@ -19,6 +19,7 @@ public class TopKFrequentElements347 {
 
         for (int num : nums)
             frequencyMap.merge(num, 1, Integer::sum);
+        System.out.println(frequencyMap);
 
         PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(Comparator.comparingInt(Map.Entry::getValue));
 
