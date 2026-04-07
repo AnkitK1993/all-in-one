@@ -28,11 +28,9 @@ public class twoSumSortedArr {
                 } else
                     left = mid + 1;
             }
-            if (firstTrueIndex != 0 && nums[firstTrueIndex] == diff)
+            if (firstTrueIndex != -1 && nums[firstTrueIndex] == diff)
                 return new int[]{i + 1, firstTrueIndex + 1};
         }
-
-
         return new int[]{};
     }
 }
