@@ -17,7 +17,6 @@ public class SortColors {
 
         int r = counts[0];
         int w = counts[1];
-        int b = counts[2];
 
         for (int i = 0; i < r; i++)
             nums[i] = 0;
